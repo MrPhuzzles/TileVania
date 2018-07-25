@@ -5,8 +5,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour {
 
-    public float runSpeed;
-    private Rigidbody2D myRigidbody;
+    [SerializeField] float runSpeed = 5f;
+    Rigidbody2D myRigidbody;
 	// Use this for initialization
 	void Start () {
         myRigidbody = GetComponent<Rigidbody2D>();
